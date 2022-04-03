@@ -1,6 +1,6 @@
 const { MongoClient, ObjectId } = require('mongodb');
 
-const uri = 'mongodb://root:MongoDB2019!@127.0.0.1:27017' // this is a test, do not use uris on your code directly :) at least put it on an .env file
+const uri = 'mongodb://root:MongoDB2019!@mongo:27017' // this is a test, do not use uris on your code directly :) at least put it on an .env file
 
 const client = new MongoClient(uri);
 

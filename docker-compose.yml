@@ -8,3 +8,11 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: MongoDB2019!
     ports:
       - "27017:27017"
+
+  api:
+    build: .
+    volumes:
+      - .:/app
+    ports: 
+      - "3000:3000"
+    command: "npm start"
